@@ -97,7 +97,7 @@ nav ul li a:not(.current_page):hover, a:not(.current_page):focus{
 
 
 footer{
-    color: rgb(124, 124, 124);
+    color: black;
     margin: 10vh auto 3vh;
     position: absolute;
     width: 100%;
@@ -170,7 +170,7 @@ button{
 }
 
 /*tablet*/
-@media screen and (max-width: 1024px)  and (orientation:portrait) {
+@media screen and (max-width: 1000px)  and (orientation:portrait) {
 
     /* Navbar */
     nav{
@@ -212,7 +212,7 @@ button{
 
 
 /*phone*/
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     nav ul {
         flex-direction: column;
         align-items: flex-end;
