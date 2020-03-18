@@ -1,0 +1,256 @@
+body {
+    background-color: white;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: calc(2vh + 0.4vw);
+    line-height: 4vh;
+    -ms-overflow-style: scrollbar;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+}
+
+
+.skipcont a{
+    left: 0;
+    color:black;
+    padding: 3vw;
+    position: absolute;
+    top: -300px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+}
+
+.skipcont a:focus{
+    top:0;
+    text-decoration: underline;
+    text-decoration-color: #ff4d4d;
+    outline: none;
+}
+
+
+
+img{
+    border-radius: 50%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+  }
+#intro_part{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #110f10;
+}
+
+/* Navbar */
+nav{
+    padding: 3vw 1vw 0 0;
+    /*border-bottom: 3px solid #50C7C7;*/
+}
+
+nav ul{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    justify-content: flex-end;
+    flex-direction: row;
+    list-style: none;
+}
+
+nav ul li {
+    width: 6em;
+    text-align: center;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li a:not(.current_page):hover, a:not(.current_page):focus{
+    font-weight: bold;
+    text-decoration: underline ;
+    -webkit-text-decoration-style: solid;
+    text-decoration-style: solid;
+    text-decoration-color: blue;
+}
+
+
+
+.intro_text{
+    height: auto;
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    font-size: calc(2vh + 0.4vw);
+    line-height: 2em;
+    margin-left:7.3vw;
+    margin-right:5vw;
+}
+
+
+
+footer{
+    color: rgb(124, 124, 124);
+    margin: 10vh auto 3vh;
+    position: absolute;
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
+}
+
+form{
+    position: relative;
+    margin-top: 10vh;
+    margin-left:7.3vw;
+    margin-right:5vw;
+}
+
+
+legend{
+    font-weight: 200;
+    opacity: 0.9;
+}
+
+input[type=text], textarea {
+    color: black;
+    border: none;
+    background-color: rgb(206, 204, 204);
+    border-bottom: 2px solid white;
+}
+
+.form-group label span{
+    font-size: 1vw;
+}
+
+.textarea label span{
+    font-size: 1vw;
+}
+
+textarea{
+    width: 25vw;
+    height: 1.2em;
+}
+
+.textarea{
+    margin: 0.5vw 0 0.5vw;
+}
+
+form fieldset div{
+    display: inline-block;
+    margin-right: 1vw;
+}
+
+
+button{
+    display: block;
+    font-weight: 300;
+    padding: 0;
+    margin: 1.3vh 0;
+    font-size: calc(2vh + 0.4vw);
+    opacity: 0.9;
+    color: black;
+    border: none;
+    background-color: white;
+}
+
+.submit{
+    margin: 0;
+}
+
+.submit:hover, .submit:focus{
+    text-decoration: underline;
+    text-decoration-color: #ff4d4d;
+}
+
+/*tablet*/
+@media screen and (max-width: 1024px)  and (orientation:portrait) {
+
+    /* Navbar */
+    nav{
+        padding: 5vw 3vw 0 0;
+    }
+
+    nav ul{
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        justify-content: flex-end;
+        flex-direction: row;
+        list-style: none;
+    }
+
+    nav ul li {
+        text-align: right;
+        width: auto;
+        margin: 3vw;
+    }
+
+    #intro_part{
+        width: auto;
+        height: auto;
+    }
+
+    .intro_text {
+        font-size: 5vw;
+        line-height: 1.6em;
+        margin-left: 8vw;
+        margin-top: 2vh;
+    }
+
+
+}
+
+
+
+
+/*phone*/
+@media screen and (max-width: 500px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 5vw;
+        margin-right: 5vw;
+        -webkit-box-orient: vertical;
+    }
+
+    nav ul li {
+        text-align: right;
+        width: auto;
+        margin: 0;
+    }
+
+    #intro_part{
+        height: 100vh;
+    }
+
+    .intro_text {
+        font-size: 5vw;
+        line-height: 1.6em;
+        margin-left: 8vw;
+        margin-top: 4vh;
+    }
+
+
+
+}
+
+
+/*motion reduction*/
+@media screen and (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto; /* Removes scroll animation */
+    }
+
+    .intro_ani__container__list {
+        -webkit-animation-name: none;
+        animation-name: none;
+    }
+}

@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-161159724-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-161159724-1');
+</script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yunzhe Jiang's Personal Website</title>
+    <link rel="stylesheet" href="css/html5reset.css" >
+    <link rel="stylesheet" href="css/about.css" >
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" >
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
+
+</head>
+
+<body>
+
+<div class="skipcont"><a href="#skip">Skip to Main Content</a></div>
+
+<!--    navigation bar-->
+
+
+
+        <!--    navigation bar-->
+        <nav data-aos="fade-down"  data-aos-duration="600">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>  
+                <li><a href="journey.html">Journey</a></li>
+                <li><a href="interests.html">Interests</a></li>
+                <li><a class="current_page" style="color: rgb(124, 124, 124)">About</a></li>
+            </ul>
+        </nav>
+    <br />
+    <br />
+
+        <img alt="Myself" src="imgs/myself/img2.jpg" class="center"> 
+    <br />
+    <br />
+    <br />
+
+        <div class="intro_text" id="skip"  data-aos-duration="1600">
+            <p>What's up! I am  Yunzhe Jiang, a first year master student major in Data Science in University of Michigan School of Information.</p>
+            <p>I am currently doing a 3+2 rogram founded by Shanghai Jiao Tong University and University of Michigan.</p>
+            <p>I will be graduating in 2020 for bachelor degree in Electrical and Computer Engineering and 2021 for master degree in Data Science.</p>
+            <p>My current research direction is Natural Language Processing. I hope one day I can create a system able to talk with people like a real person.</p>          
+            <p>I love sports, basketball especially. I love the sound of basketball bouncing on the ground and swishing throught the net. They make me feel energetic! </p>
+            <p>I also love photography. Taking photos of what I have seen and experienced helps me record my life, reminding me of those precious moments that I should always remember.</p>
+
+
+        </div>
+
+
+        <form class="form-horizontal" action="https://formspree.io/mbjjgelp" method="POST">
+            <fieldset>
+                <legend class="text-center header">Contact Me</legend>
+
+                <div class="form-group">
+                    <label for="fname"><span aria-label="Input your first name">First Name</span></label>
+                    <div>
+                        <input id="fname" name="name" type="text"  class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="lname"><span aria-label="enter your last name">Last Name</span></label>
+                    <div>
+                        <input id="lname" name="name" type="text"  class="form-control">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email"><span aria-label="input your email">Email</span></label>
+                    <div>
+                        <input id="email" name="email" type="text" class="form-control">
+                    </div>
+                </div>
+
+                <br>
+                <div class="textarea">
+                    <label for="message"><span aria-label="input your message">Message</span></label>
+                    <div>
+                        <textarea class="form-control" id="message" name="message" ></textarea>
+                    </div>
+                </div>
+
+                <br>
+                <div class="form-group">
+                    <div>
+                        <button type="submit" class="submit">Submit</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+
+
+        <footer>
+                <span>Yunzhe Jiang @ 2020</span>
+            </footer>
+    
+
+
+
+
+
+
+<!--aos init-->
+<script>
+    AOS.init({
+        // detect reduce motion here to stop AOS
+        disable: function () {
+            const query = '(prefers-reduced-motion: reduce)';
+            const hasOSReducedMotion = window.matchMedia(query).matches;
+            if(hasOSReducedMotion) return true;
+        }
+    });
+</script>
+
+</body>
+</html>

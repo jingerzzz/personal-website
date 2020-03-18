@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-161159724-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-161159724-1');
+</script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yunzhe Jiang's Personal Website</title>
+    <link rel="stylesheet" href="css/html5reset.css" >
+    <link rel="stylesheet" href="css/journey.css" >
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" >
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+<body>
+
+<div class="skipcont"><a href="#skip">Skip to Main Content</a></div>
+
+<!--    navigation bar-->
+
+<div>
+
+
+        <!--    navigation bar-->
+        <nav data-aos="fade-down" data-aos-duration="1600">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a class="current_page" style="color: rgb(124, 124, 124)">Journey</a></li>
+                <li><a href="interests.html">Interests</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+
+        <div class="intro_text" id="skip" data-aos="fade-up" data-aos-duration="1600">
+            <p>This is the photos I took in the journey to Beautiful Florida!</p>
+        </div>
+
+
+
+
+            <div class="container">
+                <div class="column">
+                    <img data-aos="fade-up" alt="pic1" data-aos-duration="1600" src="imgs/journey_in_US/img1.jpg">
+                    <img data-aos="fade-up" alt="pic2" data-aos-duration="1600" src="imgs/journey_in_US/img2.jpg">
+                    <img data-aos="fade-up" alt="pic3" data-aos-duration="1600" src="imgs/journey_in_US/img3.jpg">
+                    <!-- <img data-aos="fade-up" alt="graphic design2" data-aos-duration="1600" src="imgs/journey_in_US/img4.jpg"> -->
+
+                </div>
+                <div class="column">
+                    <img data-aos="fade-up" alt="pic4" data-aos-duration="1600" src="imgs/journey_in_US/img5.jpg">
+                    <img data-aos="fade-up" alt="pic5" data-aos-duration="1600" src="imgs/journey_in_US/img6.jpg">
+                    <img data-aos="fade-up" alt="pic6" data-aos-duration="1600" src="imgs/journey_in_US/img4.jpg">
+                </div>
+                <div class="column">
+                    <!-- <img data-aos="fade-up" alt="sketch3" data-aos-duration="1600" src="imgs/journey_in_US/img8.jpg"> -->
+                    <img data-aos="fade-up" alt="pic7" data-aos-duration="1600" src="imgs/journey_in_US/img9.jpg">
+                    <img data-aos="fade-up" alt="pic8" data-aos-duration="1600" src="imgs/journey_in_US/img10.jpg">
+                    <img data-aos="fade-up" alt="pic9" data-aos-duration="1600" src="imgs/journey_in_US/img11.jpg">
+
+                </div>
+
+        </div>
+
+
+</div>
+
+
+
+
+<!--footer-->
+
+<footer>
+        <span>Yunzhe Jiang @ 2020</span>
+    </footer>
+
+
+<!--aos init-->
+<script>
+    AOS.init({
+        // detect reduce motion here to stop AOS
+        disable: function () {
+            const query = '(prefers-reduced-motion: reduce)';
+            const hasOSReducedMotion = window.matchMedia(query).matches;
+            if(hasOSReducedMotion) return true;
+        }
+    });
+</script>
+
+</body>
+</html>

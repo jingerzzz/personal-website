@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-161159724-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-161159724-1');
+</script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yunzhe Jiang's Personal Website</title>
+    <link rel="stylesheet" href="css/html5reset.css" >
+    <link rel="stylesheet" href="css/projects.css" >
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" >
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+</head>
+
+
+<body>
+
+<div class="skipcont"><a href="#skip">Skip to Main Content</a></div>
+
+<div>
+
+<!--    navigation bar-->
+    <nav data-aos="fade-down" data-aos-duration="600">
+        <ul>            
+            <li><a href="index.html">Home</a></li>
+            <li><a class="current_page" style="color: rgb(124, 124, 124);">Projects</a></li>
+            <li><a href="journey.html">Journey</a></li>
+            <li><a href="interests.html">Interests</a></li>
+            <li><a href="about.html">About</a></li>
+
+        </ul>
+    </nav>
+
+<br />
+
+<br />
+<br />
+<br />
+
+
+
+
+
+        <h2 id = "projects">Research Projects</h2>
+        <div class="projects"> 
+                <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                                <img id="image1" src="imgs/projects/research/sarcasm.jfif" alt="Sacarsm Detection" />
+                          </div>
+                          <div class="flip-card-back">
+                            <h1>Sarcasm Detection</h1>
+                            <p>This is a project aimed at detecting if a reddit comment is sarcastic or not.</p>
+                            <a href="https://github.com/jingerzzz/sarcasm-detection">Github</a>
+                          </div>
+                        </div>
+                      </div>
+                <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                    <img id="image2" src="imgs/projects/research/propaganda.jfif" alt="Sacarsm Detection" />
+                              </div>
+                              <div class="flip-card-back">
+                                    <h1>Propaganda Classification</h1>
+                                    <p>This is a project aimed at classify the propaganda techniques used in news text.</p>
+                                <a href="https://github.com/jingerzzz/propaganda-classification">Github</a>
+
+                              </div>
+                            </div>
+                          </div>
+        </div>
+
+        <h2 id = "projects">Course Projects</h2>
+        <div class="projects"> 
+                <div class="flip-card">
+                        <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                                <img id="image3" src="imgs/projects/course/cv.png" alt="Cell Segmentation" />
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Cell Segmentation</h1>
+                            <p>This is a project aimed at presenting an advanced network to docell image semantic segmentation on multipleapplications such as microscope scanned cer-vical  cancer  cytology. </p>
+                            <a href="https://github.com/jingerzzz/EECS545-UNet-">Github</a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                            <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                    <img id="image4" src="imgs/projects/course/fetch_data.png" alt="Fetch Data" />
+                            </div>
+                            <div class="flip-card-back">
+                                <h1>Fetch Data</h1>
+                                <p>This is a project that allows users to check the situation of Data Scientist positions in Michigan and see the distribution of job recruitments over different companies, industries, sectors and etc. </p>
+                                <a href="https://github.com/jingerzzz/SI507_final_project">Github</a>
+                            </div>
+                            </div>
+                        </div>
+        
+
+
+        </div>
+        
+
+
+
+    <!-- </div> -->
+
+
+
+
+
+
+
+
+
+<!--footer-->
+
+<footer>
+        <span>Yunzhe Jiang @ 2020</span>
+    </footer>
+
+<!--cursor-->
+    <div id="cursor"></div>
+
+</div>
+
+
+<!--aos init-->
+<script>
+    AOS.init({
+        // detect reduce motion here to stop AOS
+        disable: function () {
+            const query = '(prefers-reduced-motion: reduce)';
+            const hasOSReducedMotion = window.matchMedia(query).matches;
+            if(hasOSReducedMotion) return true;
+        }
+    });
+</script>
+
+
+</body>
+
+
+</html>

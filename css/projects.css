@@ -1,0 +1,285 @@
+
+
+body {
+    background-color: white;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: calc(2vh + 0.4vw);
+    line-height: 4vh;
+    -ms-overflow-style: scrollbar;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+
+}
+
+h2{
+    font-size: 1.5em;
+    text-align: center;
+    padding: 5px;
+  }
+  
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: white;
+    color: black;
+    transform: rotateY(180deg);
+  }
+
+a{
+    color: green;
+    text-decoration: none;
+
+}
+
+.projects{
+  
+    min-height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .projects > .flip-card{
+    margin: 100px;
+    width: 300px;
+  }
+
+  .projects > .img{
+    margin: 100px;
+    width: 300px;
+  }
+
+
+
+.skipcont a{
+    left: 0;
+    color: black;
+    padding: 3vw;
+    position: absolute;
+    top: -300px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+}
+
+.skipcont a:focus{
+    top:0;
+    text-decoration: underline;
+    text-decoration-color: #ff4d4d;
+    outline: none;
+}
+
+
+#intro_part{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+
+
+
+
+
+/* Navbar */
+nav{
+
+    padding: 3vw 2vw 0 0;
+
+}
+
+nav ul{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    justify-content: flex-end;
+    flex-direction: row;
+    list-style: none;
+}
+
+nav ul li {
+
+    width: 6em;
+    text-align: center;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li a:not(.current_page):hover, nav ul li a:not(.current_page):focus{
+    font-weight: bold;
+    text-decoration: underline ;
+    -webkit-text-decoration-style: solid;
+    text-decoration-style: solid;
+    text-decoration-color: blue;
+}
+
+
+/*intro_text*/
+.intro_text{
+    height: auto;
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    font-size: calc(2vh + 0.4vw);
+    line-height: 2em;
+    margin-top: 5vw;
+    margin-left:7.3vw;
+    margin-right:5vw;
+}
+
+
+
+
+
+
+
+/*highlight_proj*/
+.sub_title{
+    font-size: 3vw;
+
+    color: rgb(124, 124, 124);
+    margin: 10vh 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+
+footer{
+    color: rgb(124, 124, 124);
+    margin: 1vw auto;
+    position: absolute;
+    bottom: -10vw;
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
+}
+
+
+/*tablet*/
+@media screen and (max-width: 1024px)  and (orientation:portrait) {
+
+    /* Navbar */
+    nav{
+        padding: 5vw 3vw 0 0;
+    }
+
+    nav ul{
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        justify-content: flex-end;
+        flex-direction: row;
+        list-style: none;
+    }
+
+    nav ul li {
+        text-align: right;
+        width: auto;
+        margin: 3vw;
+    }
+
+    #intro_part{
+        width: auto;
+        height: auto;
+    }
+
+    .intro_text {
+        font-size: 5vw;
+        line-height: 1.6em;
+        margin-left: 8vw;
+        margin-top: 2vh;
+
+    }
+
+}
+
+/*phone*/
+@media screen and (max-width: 500px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 5vw;
+        margin-right: 5vw;
+        -webkit-box-orient: vertical;
+    }
+
+    nav ul li {
+        text-align: right;
+        width: auto;
+        margin: 0;
+    }
+
+    #intro_part{
+        height: 100vh;
+    }
+
+    .intro_text {
+        font-size: 7.5vw;
+        line-height: 1.6em;
+        margin-left: 8vw;
+        margin-top: 4vh;
+    }
+
+
+}
+
+
+/*motion reduction*/
+@media screen and (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto; /* Removes scroll animation */
+    }
+
+    .intro_ani__container__list {
+        -webkit-animation-name: none;
+        animation-name: none;
+    }
+}
