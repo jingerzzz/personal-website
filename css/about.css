@@ -10,7 +10,11 @@ body {
     position: relative;
 }
 
-
+h1{
+    font-size: 1.5em;
+    text-align: center;
+    padding: 5px;
+  }
 .skipcont a{
     left: 0;
     color:black;
